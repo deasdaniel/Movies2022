@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.deasdaniel.movies2022.ui.list.listFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_datailFragment"
+            app:destination="@id/datailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/datailFragment"
+        android:name="com.deasdaniel.movies2022.ui.detail.DatailFragment"
+        android:label="fragment_datail"
+        tools:layout="@layout/fragment_datail" />
+</navigation>
